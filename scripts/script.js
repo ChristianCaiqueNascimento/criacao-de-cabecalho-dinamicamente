@@ -27,7 +27,7 @@ function toggleHeader() {
     }
 
 }
-$menu.addEventListener('click',toggleMenu,false);
+$menu.addEventListener('click', toggleMenu, true);
 var isOpen = true;
 function toggleMenu() {
   if(!isOpen){
@@ -40,7 +40,7 @@ function toggleMenu() {
     isOpen = false;
   }
 }
-$navBar.addEventListener('click',navClick,false);
+$navBar.addEventListener('click', navClick, true);
 function navClick(evt){
     if(evt.target.tagName == 'A') {
       toggleMenu();

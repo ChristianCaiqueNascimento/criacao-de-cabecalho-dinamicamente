@@ -27,8 +27,8 @@ function toggleHeader() {
     }
 
 }
-$menu.addEventListener('click', toggleMenu, true);
-var isOpen = true;
+$menu.addEventListener('click', toggleMenu, false);
+var isOpen = false;
 function toggleMenu() {
   if(!isOpen){
     $navBar.classList.add('menu-opened'); 
@@ -40,7 +40,7 @@ function toggleMenu() {
     isOpen = false;
   }
 }
-$navBar.addEventListener('click', navClick, true);
+$navBar.addEventListener('click', navClick, false);
 function navClick(evt){
     if(evt.target.tagName == 'A') {
       toggleMenu();

@@ -28,7 +28,7 @@ function toggleHeader() {
 
 }
 $menu.addEventListener('click',toggleMenu,false);
-var isOpen = false;
+var isOpen = true;
 function toggleMenu() {
   if(!isOpen){
     $navBar.classList.add('menu-opened'); 
